@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Головна</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Пошук</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <family>Montserrat</family>
+            <pointsize>24</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Пошук товару</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(0, 0, 0);
+gridline-color: rgb(255, 255, 255);
+ padding: 10px 20px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>Введіть назву товару</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="font">
+           <font>
+            <pointsize>18</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"> QPushButton {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+QPushButton:pressed {
+            background-color: rgb(0, 143, 255); /* изменяем цвет при нажатии */
+        }</string>
+          </property>
+          <property name="text">
+           <string>Знайти</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Товари</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>728</width>
+             <height>519</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QListWidget" name="listWidget"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="styleSheet">
+               <string notr="true"> QPushButton {
+  background-color: rgb(0, 163, 255);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+QPushButton:pressed {
+            background-color: rgb(0, 143, 255); /* изменяем цвет при нажатии */
+        }</string>
+              </property>
+              <property name="text">
+               <string>Зберегти</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_3">
+              <property name="styleSheet">
+               <string notr="true">
+ QPushButton {
+  background-color: rgb(19, 136, 8);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+QPushButton:pressed {
+            background-color: rgb(0, 143, 255); /* изменяем цвет при нажатии */
+        }</string>
+              </property>
+              <property name="text">
+               <string>Оновити</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Налаштування</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(127, 127, 127);</string>
+          </property>
+          <property name="text">
+           <string>Налаштуйте зберігання товарів
+для подальшого використання,
+або перегляду.
+Програма не несе відповідальність за будь які порушення норм сайту
+Будь ласка використовуйте лише для ознайом. цілей
+</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton">
+          <property name="text">
+           <string>Custom file save</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_3">
+          <property name="styleSheet">
+           <string notr="true">  padding: 10px 20px;</string>
+          </property>
+          <property name="placeholderText">
+           <string>$_FILENAME</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
